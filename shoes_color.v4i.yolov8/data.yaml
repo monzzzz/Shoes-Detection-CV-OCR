@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 27
+names: ['banyen', 'bej', 'black', 'blue', 'cream', 'cream white', 'gold', 'green', 'grey', 'kakee', 'kapi', 'keema', 'krom', 'moo', 'nak', 'nood', 'orange', 'orot', 'pink', 'purple', 'red', 'silver', 'tan', 'tarn', 'white', 'white-black', 'yellow']
+
+roboflow:
+  workspace: shoes-color-detection
+  project: shoes-color
+  version: 4
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/shoes-color-detection/shoes-color/dataset/4
