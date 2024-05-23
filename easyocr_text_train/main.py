@@ -83,18 +83,9 @@ if __name__ == "__main__":
 
 # train command
 """ CUDA_VISIBLE_DEVICES=0 python train.py \
---train_data train_lmdb --valid_data val_lmdb \
+--train_data lmdb/train_lmdb --valid_data lmdb/val_lmdb \
 --select_data MJ-ST --batch_ratio 0.5-0.5 \
 --Transformation None --FeatureExtraction VGG --SequenceModeling BiLSTM --Prediction CTC
 """
-#
-#
-#
 
 # generate with synthtiger
-
-
-
-# list of fonts
-# pattaya font
-# ayutthaya font
