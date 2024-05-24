@@ -13,8 +13,6 @@ def main():
     for filename in file_name_in_folder:
         file_path = Path(filename)
         print("image: " + str(index + 1) + " " + filename)
-        if (index == 10):
-            break
         tools.easy_ocr(os.path.join(directory_folder_path, filename), output_path=os.path.join(rendered_folder_path, file_path.stem + "_rendered.png"), render=True)
         print("\n")
         index+=1
