@@ -17,5 +17,7 @@ def main():
         if (index == 50):
             break
         os.rename(os.path.join(label_cropped_images_path, filename), os.path.join(label_cropped_images_path, str(index) + "_" + results + ".png" ))
+
+
 if __name__ == "__main__":
     main()

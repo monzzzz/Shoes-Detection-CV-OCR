@@ -120,5 +120,19 @@ def screenshot_specific_area(coordinate, image_path, output_path):
     crop_image.save(output_path)
 
 
+def clear_incorrect_file(file_name):
+    print(file_name)
+    for char in file_name[2:]:
+        if (char in "123456789"):
+            print("Removed " + file_name)
+            os.remove("easyocr_text_train_images/" +  file_name)
+            break
+
+def move_all_files_in_folder(original_folder, destination_folder):
+    file_names = os.listdir(original_folder)
+    for file_name in file_names:
+        os.rename(os.path.join(original_folder, file_name), os.path.join(destination_folder, file_name))
+
+
 if __name__ == "__main__":
     correct_file_name("easyocr_text_train_images")
