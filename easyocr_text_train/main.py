@@ -16,8 +16,8 @@ def get_text_from_tha_file():
         with open(output_path, 'w') as output_file:
             for list in lists:
                 output_file.write(list[1] + '\n')
+                        
 # generate with pillow image
-
 def generate_images_with_pillow(file_path, output_folder_path, font_path, text_file_path, amount):
     with open(file_path, "r") as read_file:
         lines = read_file.readlines()
