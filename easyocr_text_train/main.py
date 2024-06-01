@@ -58,19 +58,23 @@ def main():
     parser.add_argument("--func", type=str, default="train", help="train or val")   
     args = parser.parse_args()
     input_path = "datasets/tha_dataset.txt"
-    output_folder_path = "formatted_data/train/test"
-    text_file_path = "formatted_data/train/gt.txt"
+    output_folder_path = "data_MJ/train/test"
+    text_file_path = "data_MJ/train/gt.txt"
     pattaya_font_path = "fonts/Pattaya/Pattaya-Regular.ttf"
     # ayutthaya_font_path = "fonts/Ayutthaya/Ayutthaya/Ayutthaya.ttf"
-    data_amount = 1000
+    data_amount = 8000
     if (args.func == "train"):
-        output_folder_path = "formatted_data/train/test"
-        text_file_path = "formatted_data/train/gt.txt"
-        data_amount = 800
+        output_folder_path = "data_MJ/train/test"
+        text_file_path = "data_MJ/train/gt.txt"
+        data_amount = 8000
     if (args.func == "val"):
-        output_folder_path = "formatted_data/val/test"
-        text_file_path = "formatted_data/val/gt.txt"
-        data_amount = 200
+        output_folder_path = "data_MJ/val/test"
+        text_file_path = "data_MJ/val/gt.txt"
+        data_amount = 1000
+    if (args.func == "eval"):
+        output_folder_path = "data_MJ/eval/test"
+        text_file_path = "data_MJ/eval/gt.txt"
+        data_amount = 1000
     # generate_images_with_pillow(input_path, output_folder_path, pattaya_font_path)
     generate_images_with_pillow(input_path, output_folder_path , pattaya_font_path, text_file_path, data_amount)
 
