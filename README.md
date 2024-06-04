@@ -56,8 +56,9 @@ data_lmdb_release
 ```
 
 #### training step
-`pip3 install lmdb pillow torchvision nltk natsort` required
-python version 3.6 or 3.7 required
+##### requirements
+- `pip3 install lmdb pillow torchvision nltk natsort` required
+- python version 3.6 or 3.7 required
 
 
 to be continued
